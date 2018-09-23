@@ -1,18 +1,18 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <Calculator/>
+    <Calculator></Calculator>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Calculator from '@/components/Calculator.vue'
+import Vue from 'vue'
+import Calculator from '@/components/Calculator/Calculator.vue' // @ is an alias to /src
 
-export default {
+export default Vue.extend({
   name: 'home',
   components: {
     Calculator
   }
-}
+})
 </script>
